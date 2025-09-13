@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: django-aws-host-prod-container
+    environment:
+      - DEBUG=0
+    volumes: []   # no bind mount, use image only
+    restart: always

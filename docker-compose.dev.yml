@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  backend:
+    container_name: django-aws-host-dev-container
+    environment:
+      - DEBUG=1
+    volumes:
+      - ./:/app   # mount local code for live reload
